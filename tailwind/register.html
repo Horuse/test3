@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'lato': ['Lato', 'sans-serif'],
+                        'cherry': ['Cherry Bomb One', 'system-ui'],
+                    },
+                    colors: {
+                        'custom-red': '#FF5F5F',
+                        'custom-gray': '#32323C',
+                    },
+                    fontSize: {
+                        '10px': '10px',
+                        '15px': '15px',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-black font-lato m-0">
+<main class="bg-custom-red h-dvh box-border flex flex-col p-12">
+    <div class="h-1/2 flex flex-col justify-center items-center gap-12">
+        <svg width="136" height="134" viewBox="0 0 136 134" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="67.5833" cy="66.5746" rx="67.5833" ry="66.5746"
+                     transform="matrix(-0.99998 0.00627885 0.00627885 0.99998 135.164 0)" fill="white"/>
+            <path d="M75.8332 49.0606C79.5344 49.0606 103.602 43.5066 111.009 52.7633C125.818 76.8308 67.5004 106.958 58.2439 102.75C48.063 98.1213 16.5902 35.1756 48.063 29.6215C61.9481 29.6215 73.9802 46.2836 75.8332 49.0606Z"
+                  fill="#FF5F5F"/>
+        </svg>
+        <span class="bg-custom-red text-white font-cherry text-5xl">FATED</span>
+    </div>
+    <div class="h-1/2 w-full flex flex-col justify-start items-center gap-5">
+        <div class="flex gap-5 w-full">
+            <button class="h-7 flex-1 text-xs bg-white bg-opacity-10 text-white font-semibold rounded">LOGIN</button>
+            <button class="h-7 flex-1 text-xs bg-white text-custom-red font-semibold rounded">REGISTER</button>
+        </div>
+        <div class="flex flex-col gap-5 w-full">
+            <button class="text-15px w-full h-12 bg-white text-custom-gray rounded tracking-widest font-normal">user name</button>
+            <button class="text-15px w-full h-12 bg-white text-custom-gray rounded tracking-widest font-normal">password</button>
+            <button class="text-15px w-full h-12 bg-white text-custom-gray rounded tracking-widest font-normal">email</button>
+        </div>
+        <div class="w-full flex justify-end">
+            <span class="text-10px text-white bg-transparent">forgot password?</span>
+        </div>
+        <button class="text-15px w-full h-12 bg-white text-custom-gray rounded tracking-widest font-normal">REGISTER</button>
+        <div class="flex gap-1">
+            <span class="text-10px text-right text-white">ALREADY HAVE AN ACCOUNT?</span>
+            <a href="login.html" class="text-10px text-white"><b>LOGIN</b></a>
+        </div>
+    </div>
+</main>
+</body>
+</html>
